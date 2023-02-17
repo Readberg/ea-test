@@ -1,5 +1,109 @@
 @import url(reset.css);
 
+:root {
+    --blue-color: #162C4E;
+    --orange-color: #DF2224;
+    --text-color: rgba(0, 0, 0, 0.8);
+    --white-color: #ffffff;
+}
+
+h1 {
+    font-weight: 700;
+    opacity: .39;
+    font-size: 72px;
+    text-transform: uppercase;
+    color: var(--blue-color);
+}
+p {
+    font-size: 18px;
+    line-height: 150%;
+}
+
 .body {
-    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;   
+    color: var(--text-color);
+}
+.wrapper {
+    max-width: 1024px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+/* Main */
+.main {
+    margin: 93px 0 76px;
+    flex: 1 1 auto;
+}
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.time-info {
+    margin: 32px 0 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.time {
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 100%;
+    color: var(--blue-color);
+}
+.time-text {
+    display: flex;
+    gap: 20px;
+}
+.time-text li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/img/time.svg);
+    height: 54px;
+    width: 132px;
+    color: var(--white-color);
+}
+.event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.event-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    height: 60px;
+    padding: 16px 28px;
+    border-radius: 40px;
+    background: var(--blue-color);
+    color: var(--white-color);
+}
+.event-link span {
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/img/arrow.svg);
+}
+
+/* Footer */
+
+.footer {
+    background: var(--blue-color);
+    height: 192px;
 }
