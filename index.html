@@ -41,12 +41,30 @@
     </main>
     <footer class="footer">
         <div class="footer-wrapper wrapper">
-            <form class="footer-form" action="#">
-                <input type="email" name="email" placeholder="Enter your Email and get notified">
+            <form class="footer-form" id="form">
+                <input class="email req" type="email" name="email" placeholder="Enter your Email and get notified">
                 <button class="form-btn"><p class="arrow"></p></button>
             </form>
-        </div>        
+        </div>
+        <div class="overlay js-overlay">
+            <div class="popup js-success">
+                <h2>Success</h2>
+                <p>You have successfully subscribed to the email newsletter</p>
+                <div class="close-popup"></div>
+                <div class="close-btn"></div>
+            </div>
+        </div>
+        <div class="overlay js-overlay js-overlay-error">
+            <div class="popup js-error">
+                <h2>Error</h2>
+                <p>An error occurred while sending data</p>
+                <div class="close-popup"></div>
+                <div class="close-btn">Close</div>
+            </div>
+        </div>          
     </footer>
-<script src="./js/main.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
