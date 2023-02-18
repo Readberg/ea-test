@@ -32,10 +32,12 @@ p {
 }
 
 .body {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
     color: var(--text-color);
+    background: url(../assets/img/left-img.png) 0% 0% no-repeat, url(../assets/img/right-img.png) 100% 0% no-repeat;
 }
 
 .wrapper {
@@ -69,6 +71,10 @@ p {
     .header {
         margin-top: 90px;
     }
+
+    .body {
+        background-size: 30%, 30%;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -84,5 +90,9 @@ p {
     .logo {
         width: 128px;
         height: 40px;
+    }
+
+    .body {
+        background-size: 40%, 45%;
     }
 }
