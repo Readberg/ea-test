@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('form');
     form.addEventListener('submit', formSend);
 
+    // Send form
     async function formSend(e) {
         e.preventDefault();
 
@@ -19,15 +20,14 @@ document.addEventListener('DOMContentLoaded', function () {
             if(response.ok) {
                 $('.js-overlay').fadeIn();
 			    $(this).find('input').val('');
-			    $('#form').trigger('reset');
+			    $('#form').trigger('reset'); // Reset form
             } else {
                 $('.js-overlay-error').fadeIn();
             }
-        } else {
-            alert('Заполните обязательные поля');
-        }
+        } 
     }
 
+    // Validate form
     function formValidate(form) {
         let error = 0;
         let formReq = document.querySelectorAll('.req');
@@ -51,10 +51,13 @@ document.addEventListener('DOMContentLoaded', function () {
         return error;
     }
 
+    // Add error
     function formAddError(input) {
         input.parentElement.classList.add('error');
         input.classList.add('error')
     }
+
+    // Remove error
     function formRemoveError(input) {
         input.parentElement.classList.remove('error');
         input.classList.remove('error')
