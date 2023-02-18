@@ -1,0 +1,98 @@
+@import url(reset.css);
+@import url(main.css);
+@import url(footer.css);
+@import url(popup.css);
+
+:root {
+    --blue-color: #162C4E;
+    --orange-color: #DF2224;
+    --text-color: rgba(0, 0, 0, 0.8);
+    --white-color: #ffffff;
+}
+
+h1 {
+    font-weight: 700;
+    opacity: .39;
+    font-size: 72px;
+    text-transform: uppercase;
+    color: var(--blue-color);
+    height: 95px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--blue-color);
+}
+
+p {
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.body {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background: url(../assets/img/left-img.png) 0% 0% no-repeat, url(../assets/img/right-img.png) 100% 0% no-repeat;
+}
+
+.wrapper {
+    max-width: 1024px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/img/arrow.svg);
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+        height: 70px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .header {
+        margin-top: 90px;
+    }
+
+    .body {
+        background-size: 30%, 30%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    h1 {
+        line-height: 104%;
+        margin-bottom: 20px;
+    }
+
+    .header {
+        margin-top: 70px;
+    }
+
+    .logo {
+        width: 128px;
+        height: 40px;
+    }
+
+    .body {
+        background-size: 40%, 45%;
+    }
+}
