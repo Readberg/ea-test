@@ -97,19 +97,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const diff = finalTime - currentTime;
 
-        // Перевод в дни
+        // Transfer in days
         const daysLeft = Math.floor(diff / 1000 / 60 / 60 / 24);
 
-        // Перевод в часы
+        // Translation to hours
         const hoursLeft = Math.floor(diff / 1000 / 60 / 60) % 24;
 
-        // Перевод в минуты
+        // Translation into minutes
         const minutesLeft = Math.floor(diff / 1000 / 60) % 60;
 
-        // Перевод в секунды
+        // Conversion to seconds
         const secondsLeft = Math.floor(diff / 1000) % 60;
 
-        // Добавление данных на страницу
+        // Adding data to the page
         days.innerText = daysLeft < 10 ? '0' + daysLeft : daysLeft;
         hours.innerText = hoursLeft < 10 ? '0' + hoursLeft : hoursLeft;
         minutes.innerText = minutesLeft < 10 ? '0' + minutesLeft : minutesLeft;
@@ -132,12 +132,9 @@ document.addEventListener('DOMContentLoaded', function () {
             textSeconds.innerText = 'Seconds';
         }
     }
-    
-    updateCounter();
-    // Запуск функции каждую секунду
-    setInterval(updateCounter, 1000)
 
-    
-    
-    
+    updateCounter();
+
+    // Running the function every second
+    setInterval(updateCounter, 1000);
 })

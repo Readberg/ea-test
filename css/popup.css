@@ -10,12 +10,12 @@
 
 .popup {
 	position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 29px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 29px;
 	width: 320px;
 	height: 370px;
 	left: 50%;
@@ -35,17 +35,17 @@
 }
 
 .close-btn {
-    width: 200px;
-    height: 60px;
-    border-radius: 40px;
-    background: var(--blue-color);
-    color: var(--white-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    line-height: 150%;
-    cursor: pointer;
+	width: 200px;
+	height: 60px;
+	border-radius: 40px;
+	background: var(--blue-color);
+	color: var(--white-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	line-height: 150%;
+	cursor: pointer;
 }
 
 .close-popup:before {

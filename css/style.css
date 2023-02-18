@@ -18,12 +18,14 @@ h1 {
     color: var(--blue-color);
     height: 95px;
 }
+
 h2 {
     font-weight: 700;
     font-size: 36px;
     text-transform: uppercase;
     color: var(--blue-color);
 }
+
 p {
     font-size: 18px;
     line-height: 150%;
@@ -32,9 +34,10 @@ p {
 .body {
     display: flex;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;   
+    font-family: 'Poppins', sans-serif;
     color: var(--text-color);
 }
+
 .wrapper {
     max-width: 1024px;
     padding: 10px;
@@ -46,6 +49,7 @@ p {
     justify-content: center;
     margin-top: 50px;
 }
+
 .arrow {
     width: 20px;
     height: 20px;
@@ -57,9 +61,11 @@ p {
         font-size: 36px;
         height: 70px;
     }
+
     p {
         font-size: 16px;
     }
+
     .header {
         margin-top: 90px;
     }
@@ -70,9 +76,11 @@ p {
         line-height: 104%;
         margin-bottom: 20px;
     }
+
     .header {
         margin-top: 70px;
     }
+
     .logo {
         width: 128px;
         height: 40px;
