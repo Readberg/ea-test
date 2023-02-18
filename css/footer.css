@@ -32,3 +32,21 @@
     width: 43px;
     background: var(--orange-color);
 }
+
+@media screen and (max-width: 768px) {
+    .footer {
+        height: 160px;
+    }
+    .footer-form {
+        width: 360px;
+        height: 41px;
+    }
+    .form-btn {
+        width: 33px;
+        height: 33px;
+    }
+    .footer-form input {
+        font-size: 14px;
+        width: 202px;
+    }
+}

@@ -114,9 +114,30 @@ document.addEventListener('DOMContentLoaded', function () {
         hours.innerText = hoursLeft < 10 ? '0' + hoursLeft : hoursLeft;
         minutes.innerText = minutesLeft < 10 ? '0' + minutesLeft : minutesLeft;
         seconds.innerText = secondsLeft < 10 ? '0' + secondsLeft : secondsLeft;
+
+        const textDays = document.querySelector('.days-text');
+        const textHours = document.querySelector('.hours-text');
+        const textMinutes = document.querySelector('.minutes-text');
+        const textSeconds = document.querySelector('.seconds-text');
+
+        if (window.innerWidth <= 768) {
+            textDays.innerText = 'DD';
+            textHours.innerText = 'HH';
+            textMinutes.innerText = 'MM';
+            textSeconds.innerText = 'SS';
+        } else {
+            textDays.innerText = 'Days';
+            textHours.innerText = 'Hours';
+            textMinutes.innerText = 'Minutes';
+            textSeconds.innerText = 'Seconds';
+        }
     }
     
     updateCounter();
     // Запуск функции каждую секунду
     setInterval(updateCounter, 1000)
+
+    
+    
+    
 })
