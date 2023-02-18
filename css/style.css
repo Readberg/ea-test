@@ -65,3 +65,16 @@ p {
     }
 }
 
+@media screen and (max-width: 360px) {
+    h1 {
+        line-height: 104%;
+        margin-bottom: 20px;
+    }
+    .header {
+        margin-top: 70px;
+    }
+    .logo {
+        width: 128px;
+        height: 40px;
+    }
+}

@@ -50,3 +50,12 @@
         width: 202px;
     }
 }
+
+@media screen and (max-width: 360px) {
+    .footer {
+        height: 141px;
+    }
+    .footer-form {
+        width: 280px;
+    }
+}
