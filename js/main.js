@@ -137,4 +137,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Running the function every second
     setInterval(updateCounter, 1000);
+
 })
+
+
+
