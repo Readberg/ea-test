@@ -2,6 +2,18 @@
 @import url(main.css);
 @import url(footer.css);
 @import url(popup.css);
+@import url(accordion.css);
+
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: normal;
+    src: url('../assets/fonts/SFPRODISPLAYREGULAR.OTF');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    src: url('../assets/fonts/SFPRODISPLAYBOLD.OTF');
+}
 
 :root {
     --blue-color: #162C4E;
@@ -43,7 +55,7 @@ p {
 
 .wrapper {
     max-width: 1024px;
-    padding: 10px;
+    padding: 10px 0;
     margin: 0 auto;
 }
 
