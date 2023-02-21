@@ -20,8 +20,6 @@ function animatedOpenBtn () {
     }
 }
 
-
-
 const buttons = findButtons();
 const contents = findContent();
 
@@ -51,12 +49,13 @@ function findContent() {
     return document.querySelectorAll('.accordion-content');
 }
 
-function contentsBackgroundImage() {
+function contentsBackground() {
     for(let i = 0; i < contents.length; i++) {
         contents[i].style.backgroundImage = `url('../assets/img/accordion/accordion${i + 1}.jpg')`;
+        contents[i].style.backgroundSize = 'cover';
     }
 }
-contentsBackgroundImage();
+contentsBackground();
 
 function buttonsBackgroundImage() {
     for (let i = 0; i < buttons.length; i++) {
@@ -68,7 +67,4 @@ function buttonsBackgroundImage() {
     }
 }
 buttonsBackgroundImage();
-
-
-// Open other events button
 

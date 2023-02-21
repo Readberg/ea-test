@@ -127,3 +127,138 @@
     top: -75px;
     left: -130px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .accordion {
+        flex-direction: column;
+        max-width: 682px;
+        height: 100%;
+    }
+    .accordion-wrapper {
+        gap: 20px;
+    }
+    .events-title {
+        font-size: 36px;
+        max-height: 36px;
+    }
+    .accordion-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+    }
+    
+    .accordion-btn {
+        max-width: 688px;
+        max-height: 85px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 26px 55px;
+        gap: 35px;
+    }
+    .btn-title {
+        transform: rotate(0deg);
+    }
+    .accordion-content {
+        height: 0;
+        width: 0;    
+        border-bottom: none;
+        box-shadow: none;
+        display: flex;
+        align-items: flex-end;
+    }
+    .accordion-content.show {
+        height: 460px;
+        width: 688px;
+    }
+    .content-info {
+        height: 192px;
+        width: 100%;
+        gap: 25px;
+        padding: 0 40px 40px 25px;
+    }
+    .content-text {
+        gap: 8px;
+    }
+    .content-num {
+        font-size: 152px;
+        left: 540px;
+        top: -25px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .events-title {
+        font-size: 32px;
+        max-height: 32px;
+    }
+    .accordion-wrapper {
+        gap: 20px;
+    }
+    .accordion {
+        flex-direction: column;
+        max-width: 682px;
+        height: 100%;
+    }
+    .accordion-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+    }
+    
+    .accordion-btn {
+        max-width: 320px;
+        max-height: 64px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 26px 25px;
+        gap: 16px;
+    }
+    .btn-title {
+        transform: rotate(0deg);
+        font-size: 18px;
+    }
+    .btn-num {
+        font-size: 24px;
+    }
+    .accordion-content {
+        height: 0;
+        width: 0;    
+        border-bottom: none;
+        box-shadow: none;
+        display: flex;
+        align-items: flex-end;
+    }
+    .accordion-content.show {
+        height: 376px;
+        width: 320px;
+    }
+    .content-info {
+        height: 158px;
+        width: 100%;
+        gap: 22px;
+        padding: 0 20px 20px 25px;
+    }
+    .content-text {
+        gap: 8px;
+    }
+    .content-title {
+        font-size: 16px;
+    }
+    .content-date {
+        font-size: 14px;
+    }
+    .content-num {
+        font-size: 80px;
+        left: 250px;
+        top: 0;
+    }
+    .content-link {
+        height: 44px;
+        width: 169px;
+        font-size: 16px;
+    }
+}
