@@ -85,7 +85,7 @@
 
 @media screen and (max-width: 768px) {
     .main {
-        margin: 135px 0;
+        margin: 135px 0 165px 0;
     }
 
     .info p {
