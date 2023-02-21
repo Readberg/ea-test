@@ -11,11 +11,17 @@ const contents = findContent();
 buttons.forEach(e => {
     e.addEventListener('click', () => {
         removeShow();
+        removeActiveBlock();
 
+        e.classList.add('activeBlock');
+        buttonsBackgroundImage()
         e.nextElementSibling.classList.add('show');
     })
 }) 
 
+function removeActiveBlock() {
+    buttons.forEach(e => e.classList.remove('activeBlock'))
+}
 function removeShow() {
     contents.forEach(e => e.classList.remove('show'));
 }
@@ -28,9 +34,20 @@ function findContent() {
     return document.querySelectorAll('.accordion-content');
 }
 
-function addBackgroundImage() {
+function contentsBackgroundImage() {
     for(let i = 0; i < contents.length; i++) {
         contents[i].style.backgroundImage = `url('../assets/img/accordion/accordion${i + 1}.jpg')`;
     }
 }
-addBackgroundImage();
+contentsBackgroundImage();
+
+function buttonsBackgroundImage() {
+    for (let i = 0; i < buttons.length; i++) {
+        if(buttons[i].classList.contains('activeBlock')) {
+            buttons[i].style.background = `url('../assets/img/accordion/background.png')`;
+        } else {
+            buttons[i].style.background = `linear-gradient(180deg, rgba(22, 44, 78, 0) 0%, #162C4E 100%), url('../assets/img/accordion/accordion${i + 1}.jpg') 60%`
+        }
+    }
+}
+buttonsBackgroundImage();

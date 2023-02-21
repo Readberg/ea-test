@@ -1,7 +1,7 @@
 .footer {
     position: relative;
     background: var(--blue-color);
-    height: 192px;
+    min-height: 175px;
     display: flex;
     align-items: center;
 }
