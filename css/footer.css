@@ -5,6 +5,13 @@
     display: flex;
     align-items: center;
 }
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+}
+.footer-wrapper:last-child {
+    margin-left: auto;
+}
 
 .footer-form {
     display: flex;
@@ -43,8 +50,36 @@
     right: 111px;
     top: 45%; 
 }
-.other-events a {
+#accordion-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: white;
+    text-decoration: none;
+    line-height: 1;
+}
+#accordion-link::after {
+    display: block;
+	position: absolute;
+    bottom: -2px;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: var(--white-color); 
+	content: "";
+	transition: width 0.3s ease-out;
+}
+#accordion-link:hover:after,
+#accordion-link:focus:after {
+	width: 80%; 
+}
+#arrow-events{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+.activeEvents {
+
 }
 
 @media screen and (max-width: 768px) {

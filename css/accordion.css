@@ -17,6 +17,8 @@
 }
 .accordion {
     display: flex;
+    justify-content: center;
+    gap: 3px;
     max-width: 100%;
     height: 682px;
     font-family: 'SF Pro Display';
@@ -25,6 +27,7 @@
 }
 .accordion-block {
     display: flex;
+    gap: 1px;
 }
 
 .accordion-btn {
@@ -38,6 +41,8 @@
     cursor: pointer;
     padding-bottom: 20px;  
     border: none;
+    border-bottom: 2px solid #FF1E00;
+    box-shadow: 0px 0px -10px #FF1E00;
 }
 .btn-title  {
     font-size: 32px;

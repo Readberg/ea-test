@@ -1,9 +1,26 @@
 let openEventsButton = document.querySelector('.other-events');
 let eventSection = document.querySelector('.accordion-section');
 
-openEventsButton.addEventListener('click', () => {
-    eventSection.classList.toggle('active');
-})
+function activateEventSection() {
+    openEventsButton.addEventListener('click', () => {
+        eventSection.classList.toggle('active');
+        openEventsButton.classList.toggle('activeEvents');
+        animatedOpenBtn();
+    })
+}
+activateEventSection()
+
+const arrow = document.getElementById('arrow-events');
+
+function animatedOpenBtn () {
+    if(openEventsButton.classList.contains('activeEvents')) {
+        arrow.style.transform = "rotate(270deg)";
+    } else {
+        arrow.style.transform = "rotate(90deg)";
+    }
+}
+
+
 
 const buttons = findButtons();
 const contents = findContent();
@@ -51,3 +68,7 @@ function buttonsBackgroundImage() {
     }
 }
 buttonsBackgroundImage();
+
+
+// Open other events button
+
