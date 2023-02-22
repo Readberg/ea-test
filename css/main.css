@@ -79,9 +79,11 @@
     color: var(--white-color);
     transition: transform .3s ease-in-out;
 }
+
 .event-link:hover {
     transform: scale(1.05);
 }
+
 .event-text {
     font-size: 18px;
 }
