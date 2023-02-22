@@ -1,3 +1,11 @@
+/*Scroll hidden */
+.body::-webkit-scrollbar {
+	display: none;
+  }
+.body {
+	-ms-overflow-style: none;  /* IE и Edge */
+	scrollbar-width: none;  /* Firefox */
+}
 /* Reset and base styles  */
 * {
 	padding: 0px;
@@ -13,6 +21,7 @@
 
 html,
 body {
+	scroll-behavior: smooth;
 	height: 100%;
 }
 

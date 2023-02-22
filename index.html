@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,14 +52,17 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
-        <div class="footer-wrapper wrapper">
-            <form class="footer-form" id="form">
+    <section class="send-section">
+        <div class="send-wrapper">
+            <form class="send-form" id="form">
                 <input class="email req" type="email" name="email" placeholder="Enter your Email and get notified">
                 <button class="form-btn">
-                    <p class="arrow"></p>
+                    <span class="arrow"></span>
                 </button>
             </form>
+            <div class="other-events">
+                <a href="#accordion" id="accordion-link">Other Events <i class="arrow" id="arrow-events"></i></a>
+            </div>
         </div>
         <div class="overlay js-overlay">
             <div class="popup js-success">
@@ -77,9 +80,144 @@
                 <div class="close-btn">Close</div>
             </div>
         </div>
-    </footer>
+    </section>
+    <section class="accordion-section" id="accordion">
+        <div class="accordion-wrapper">
+            <p class="events-title">All Events</p>
+            <div class="accordion">
+                <div class="accordion-block">
+                    <button class="accordion-btn activeBlock">
+                        <span class="btn-title">Hawaiian party</span>
+                        <span class="btn-num">01</span>
+                    </button>
+                    <div class="accordion-content show">
+                        <div class="content-info">
+                            <span class="content-num">01</span>
+                            <div class="content-text">
+                                <h4 class="content-title">Hawaiian party</h4>
+                                <p class="content-date">13.02.2023</p>
+                            </div>
+                            <a href="#" class="content-link">More information</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-block">
+                    <button class="accordion-btn">
+                        <span class="btn-title">Mafia party</span>
+                        <span class="btn-num">02</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-info">
+                            <span class="content-num">02</span>
+                            <div class="content-text">
+                                <h4 class="content-title">Mafia party</h4>
+                                <p class="content-date">13.02.2023</p>
+                            </div>
+                            <a href="#" class="content-link">More information</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-block">
+                    <button class="accordion-btn">
+                        <span class="btn-title">Party</span>
+                        <span class="btn-num">03</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-info">
+                            <span class="content-num">03</span>
+                            <div class="content-text">
+                                <h4 class="content-title">Party</h4>
+                                <p class="content-date">13.02.2023</p>
+                            </div>
+                            <a href="#" class="content-link">More information</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-block">
+                    <button class="accordion-btn">
+                        <span class="btn-title">Party on the beach</span>
+                        <span class="btn-num">04</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-info">
+                            <span class="content-num">04</span>
+                            <div class="content-text">
+                                <h4 class="content-title">Party on the beach</h4>
+                                <p class="content-date">13.02.2023</p>
+                            </div>
+                            <a href="#" class="content-link">More information</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-block">
+                    <button class="accordion-btn">
+                        <span class="btn-title">Home security</span>
+                        <span class="btn-num">05</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-info">
+                            <span class="content-num">05</span>
+                            <div class="content-text">
+                                <h4 class="content-title">Home security</h4>
+                                <p class="content-date">13.02.2023</p>
+                            </div>
+                            <a href="#" class="content-link">More information</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-block">
+                    <button class="accordion-btn">
+                        <span class="btn-title">Network Design & Implementation</span>
+                        <span class="btn-num">06</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-info">
+                            <span class="content-num">06</span>
+                            <div class="content-text">
+                                <h4 class="content-title">Network Design & Implementation</h4>
+                                <p class="content-date">13.02.2023</p>
+                            </div>
+                            <a href="#" class="content-link">More information</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-block">
+                    <button class="accordion-btn">
+                        <span class="btn-title">System Design & Engineering</span>
+                        <span class="btn-num">07</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-info">
+                            <span class="content-num">07</span>
+                            <div class="content-text">
+                                <h4 class="content-title">System Design & Engineering</h4>
+                                <p class="content-date">13.02.2023</p>
+                            </div>
+                            <a href="#" class="content-link">More information</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-block">
+                    <button class="accordion-btn">
+                        <span class="btn-title">Client Care Plans</span>
+                        <span class="btn-num">08</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-info">
+                            <span class="content-num">08</span>
+                            <div class="content-text">
+                                <h4 class="content-title">Client Care Plans</h4>
+                                <p class="content-date">13.02.2023</p>
+                            </div>
+                            <a href="#" class="content-link">More information</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>

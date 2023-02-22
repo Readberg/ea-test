@@ -1,7 +1,19 @@
 @import url(reset.css);
 @import url(main.css);
-@import url(footer.css);
+@import url(send.css);
 @import url(popup.css);
+@import url(accordion.css);
+
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: normal;
+    src: url('../assets/fonts/SFPRODISPLAYREGULAR.OTF');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    src: url('../assets/fonts/SFPRODISPLAYBOLD.OTF');
+}
 
 :root {
     --blue-color: #162C4E;
@@ -32,17 +44,18 @@ p {
 }
 
 .body {
-    overflow: hidden;
+    
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
     color: var(--text-color);
-    background: url(../assets/img/left-img.png) 0% 0% no-repeat, url(../assets/img/right-img.png) 100% 0% no-repeat;
+    background: url(../assets/img/left-img.png) no-repeat, url(../assets/img/right-img.png) no-repeat;
+    animation: background_position 2s 1 forwards;
 }
 
 .wrapper {
     max-width: 1024px;
-    padding: 10px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
@@ -52,10 +65,37 @@ p {
     margin-top: 50px;
 }
 
+.logo {
+    animation: occurrenceElements 2s 1 forwards;
+}
+
 .arrow {
     width: 20px;
     height: 20px;
     background-image: url(../assets/img/arrow.svg);
+    transition: transform .3s ease-in-out;
+}
+.arrow:hover{
+    transform: translateX(5px);
+}
+
+@keyframes background_position {
+    0% {
+        background-position: -25% -25%, 110% -10%;  
+    }
+    100% {
+        background-position: 0% 0%, 100% 0%;
+    }
+}
+
+@keyframes occurrenceElements{
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -96,3 +136,4 @@ p {
         background-size: 40%, 45%;
     }
 }
+
