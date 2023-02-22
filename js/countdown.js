@@ -14,9 +14,8 @@ export function countdown() {
     const finalTime = new Date(`May 31, 2023 00:00:00`);
 
     function updateCounter() {
-        const currentTime = new Date();
-
-        const diff = finalTime - currentTime;
+        const currentTime = new Date(),
+            diff = finalTime - currentTime;
 
         // Transfer in days
         const daysLeft = Math.floor(diff / 1000 / 60 / 60 / 24);

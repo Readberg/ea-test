@@ -1,6 +1,9 @@
 export function accordion() {
     const openEventsButton = document.querySelector('.other-events'),
-        eventSection = document.querySelector('.accordion-section');
+        eventSection = document.querySelector('.accordion-section'),
+        arrow = document.getElementById('arrow-events'),
+        buttons = findButtons(),
+        contents = findContent();
 
     // Activate section "all events"
     function activateEventSection() {
@@ -12,8 +15,7 @@ export function accordion() {
     }
     activateEventSection()
 
-    const arrow = document.getElementById('arrow-events');
-
+    // Arrow rotation animation
     function animateOpenBtn() {
         if (openEventsButton.classList.contains('activeEvents')) {
             arrow.style.transform = "rotate(270deg)";
@@ -22,37 +24,41 @@ export function accordion() {
         }
     }
 
-    // Accordion
+    // Appearance of the content section in the accordion
+    function activateAccContent() {
+        buttons.forEach(e => {
+            e.addEventListener('click', () => {
+                removeShow();
+                removeActiveBlock();
 
-    const buttons = findButtons();
-    const contents = findContent();
-
-    buttons.forEach(e => {
-        e.addEventListener('click', () => {
-            removeShow();
-            removeActiveBlock();
-
-            e.classList.add('activeBlock');
-            buttonsBackgroundImage()
-            e.nextElementSibling.classList.add('show');
+                e.classList.add('activeBlock');
+                buttonsBackgroundImage()
+                e.nextElementSibling.classList.add('show');
+            })
         })
-    })
+    }
+    activateAccContent();
+
 
     function removeActiveBlock() {
         buttons.forEach(e => e.classList.remove('activeBlock'))
     }
+
     function removeShow() {
         contents.forEach(e => e.classList.remove('show'));
     }
 
+    // find accordion buttons
     function findButtons() {
         return document.querySelectorAll('.accordion-btn');
     }
 
+    // find accordion content-blocks
     function findContent() {
         return document.querySelectorAll('.accordion-content');
     }
 
+    // Adding a design for the accordion sections
     function contentsBackground() {
         for (let i = 0; i < contents.length; i++) {
             contents[i].style.backgroundImage = `url('./assets/img/accordion/accordion${i + 1}.jpg')`;
@@ -61,6 +67,7 @@ export function accordion() {
     }
     contentsBackground();
 
+    // Adding a layout for the accordion buttons
     function buttonsBackgroundImage() {
         for (let i = 0; i < buttons.length; i++) {
             if (buttons[i].classList.contains('activeBlock')) {

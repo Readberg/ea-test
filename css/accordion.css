@@ -6,11 +6,13 @@
     color: var(--blue-color);
     height: 95px;
 }
+
 .accordion-section {
     padding-top: 50px;
     padding-bottom: 100px;
     display: none;
 }
+
 .accordion-wrapper {
     max-width: 1705px;
     display: flex;
@@ -20,9 +22,11 @@
     padding: 10px;
     margin: 0 auto;
 }
+
 .active {
     display: flex;
 }
+
 .accordion {
     display: flex;
     justify-content: center;
@@ -33,9 +37,11 @@
     color: var(--white-color);
     font-size: 18px;
 }
+
 .accordion-block:last-child {
     flex-direction: row-reverse;
 }
+
 .accordion-block {
     display: flex;
     gap: 1px;
@@ -50,32 +56,36 @@
     gap: 250px;
     background-position: 50%;
     cursor: pointer;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
     border: none;
     border-bottom: 2px solid #FF1E00;
     box-shadow: 0px 0px -10px #FF1E00;
 }
-.btn-title  {
+
+.btn-title {
     font-size: 32px;
     line-height: normal;
     min-width: 500px;
     text-align: start;
     transform: rotate(270deg);
 }
+
 .btn-num {
     font-weight: 500;
     font-size: 40px;
     letter-spacing: -0.03em;
 }
+
 .accordion-content {
     height: 100%;
-    width: 0;    
+    width: 0;
     overflow: hidden;
-    transition: 2s ease-in-out; 
+    transition: 2s ease-in-out;
     background-position: 50%;
     border-bottom: 2px solid #FF1E00;
     box-shadow: 0px 0px -10px #FF1E00;
 }
+
 .accordion-content.show {
     width: 950px;
 }
@@ -93,17 +103,21 @@
     backdrop-filter: blur(20px);
     padding: 0 0 50px 41px;
 }
+
 .content-text {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
+
 .content-title {
- font-weight: 600;
+    font-weight: 600;
 }
+
 .content-date {
     color: rgba(255, 255, 255, 0.8);
 }
+
 .content-link {
     height: 62px;
     width: 256px;
@@ -117,10 +131,12 @@
     border-left: 8px solid rgba(255, 255, 255, 0.8);
     transition: background .6s ease-in-out;
 }
+
 .content-link:hover {
     background: rgba(255, 255, 255, 1);
     color: rgba(18, 18, 18, 0.8);
 }
+
 .content-num {
     position: absolute;
     font-weight: 600;
@@ -138,20 +154,23 @@
         max-width: 682px;
         height: 100%;
     }
+
     .accordion-wrapper {
         gap: 20px;
     }
+
     .events-title {
         font-size: 36px;
         max-height: 36px;
     }
+
     .accordion-block {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         gap: 3px;
     }
-    
+
     .accordion-btn {
         max-width: 688px;
         max-height: 85px;
@@ -161,55 +180,65 @@
         padding: 26px 55px;
         gap: 35px;
     }
+
     .btn-title {
         transform: rotate(0deg);
     }
+
     .accordion-content {
         height: 0;
-        max-width: 100%;   
+        max-width: 100%;
         border-bottom: none;
         box-shadow: none;
         display: flex;
         align-items: flex-end;
     }
+
     .accordion-content.show {
-        height: 460px;    
+        height: 460px;
     }
+
     .content-info {
         height: 192px;
         width: 100%;
         gap: 25px;
         padding: 0 40px 40px 25px;
     }
+
     .content-text {
         gap: 8px;
     }
+
     .content-num {
         font-size: 152px;
         left: 540px;
         top: -25px;
     }
 }
+
 @media screen and (max-width: 360px) {
     .events-title {
         font-size: 32px;
         max-height: 32px;
     }
+
     .accordion-wrapper {
         gap: 20px;
     }
+
     .accordion {
         flex-direction: column;
         max-width: 682px;
         height: 100%;
     }
+
     .accordion-block {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         gap: 3px;
     }
-    
+
     .accordion-btn {
         max-width: 320px;
         max-height: 64px;
@@ -219,44 +248,54 @@
         padding: 26px 25px;
         gap: 16px;
     }
+
     .btn-title {
         transform: rotate(0deg);
         font-size: 18px;
     }
+
     .btn-num {
         font-size: 24px;
     }
+
     .accordion-content {
         height: 0;
-        max-width: 320px;  
+        max-width: 320px;
         border-bottom: none;
         box-shadow: none;
         display: flex;
         align-items: flex-end;
     }
+
     .accordion-content.show {
-        height: 376px;       
+        height: 376px;
     }
+
     .content-info {
         height: 158px;
         width: 100%;
         gap: 22px;
         padding: 0 20px 20px 25px;
     }
+
     .content-text {
         gap: 8px;
     }
+
     .content-title {
         font-size: 16px;
     }
+
     .content-date {
         font-size: 14px;
     }
+
     .content-num {
         font-size: 80px;
         left: 250px;
         top: 0;
     }
+
     .content-link {
         height: 44px;
         width: 169px;
