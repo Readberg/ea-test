@@ -55,7 +55,7 @@ export function accordion() {
 
     function contentsBackground() {
         for (let i = 0; i < contents.length; i++) {
-            contents[i].style.backgroundImage = `url('../assets/img/accordion/accordion${i + 1}.jpg')`;
+            contents[i].style.backgroundImage = `url('./assets/img/accordion/accordion${i + 1}.jpg')`;
             contents[i].style.backgroundSize = 'cover';
         }
     }
@@ -64,7 +64,7 @@ export function accordion() {
     function buttonsBackgroundImage() {
         for (let i = 0; i < buttons.length; i++) {
             if (buttons[i].classList.contains('activeBlock')) {
-                buttons[i].style.background = `url('../assets/img/accordion/background.png')`;
+                buttons[i].style.background = `url('./assets/img/accordion/background.png')`;
             } else {
                 buttons[i].style.background = `linear-gradient(180deg, rgba(22, 44, 78, 0) 0%, #162C4E 100%), url('../assets/img/accordion/accordion${i + 1}.jpg') 60%`
             }
