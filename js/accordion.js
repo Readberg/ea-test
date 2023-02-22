@@ -66,7 +66,7 @@ export function accordion() {
             if (buttons[i].classList.contains('activeBlock')) {
                 buttons[i].style.background = `url('./assets/img/accordion/background.png')`;
             } else {
-                buttons[i].style.background = `linear-gradient(180deg, rgba(22, 44, 78, 0) 0%, #162C4E 100%), url('../assets/img/accordion/accordion${i + 1}.jpg') 60%`
+                buttons[i].style.background = `linear-gradient(180deg, rgba(22, 44, 78, 0) 0%, #162C4E 100%), url('./assets/img/accordion/accordion${i + 1}.jpg') 60%`
             }
         }
     }
