@@ -71,3 +71,17 @@ function buttonsBackgroundImage() {
 }
 buttonsBackgroundImage();
 
+// Adaptive accordion content
+function editAccordionText() {
+    const btnTitles = document.querySelectorAll('.btn-title');
+    if (window.innerWidth <= 768) {
+        btnTitles[0].innerText = 'Meeting';
+        btnTitles[1].innerText = 'Meeting';        
+    } else {
+        btnTitles[0].innerText = 'Hawaiian party';
+        btnTitles[1].innerText = 'Мafia party'; 
+        btnTitles[2].innerText = 'Party'; 
+        btnTitles[3].innerText = 'Party on the beach'; 
+    }
+}
+setInterval(editAccordionText, 1000)
