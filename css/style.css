@@ -1,6 +1,6 @@
 @import url(reset.css);
 @import url(main.css);
-@import url(footer.css);
+@import url(send.css);
 @import url(popup.css);
 @import url(accordion.css);
 
@@ -73,6 +73,10 @@ p {
     width: 20px;
     height: 20px;
     background-image: url(../assets/img/arrow.svg);
+    transition: transform .3s ease-in-out;
+}
+.arrow:hover{
+    transform: translateX(5px);
 }
 
 @keyframes background_position {
