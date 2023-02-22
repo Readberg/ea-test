@@ -9,6 +9,7 @@
     font-weight: normal;
     src: url('../assets/fonts/SFPRODISPLAYREGULAR.OTF');
 }
+
 @font-face {
     font-family: 'SF Pro Display';
     font-weight: 600;
@@ -44,7 +45,7 @@ p {
 }
 
 .body {
-    
+
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
@@ -75,24 +76,27 @@ p {
     background-image: url(../assets/img/arrow.svg);
     transition: transform .3s ease-in-out;
 }
-.arrow:hover{
+
+.arrow:hover {
     transform: translateX(5px);
 }
 
 @keyframes background_position {
     0% {
-        background-position: -25% -25%, 110% -10%;  
+        background-position: -25% -25%, 110% -10%;
     }
+
     100% {
         background-position: 0% 0%, 100% 0%;
     }
 }
 
-@keyframes occurrenceElements{
+@keyframes occurrenceElements {
     0% {
         opacity: 0;
         transform: translateY(-50%);
     }
+
     100% {
         opacity: 1;
     }
@@ -136,4 +140,3 @@ p {
         background-size: 40%, 45%;
     }
 }
-
