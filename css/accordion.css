@@ -38,10 +38,6 @@
     font-size: 18px;
 }
 
-.accordion-block:last-child {
-    flex-direction: row-reverse;
-}
-
 .accordion-block {
     display: flex;
     gap: 1px;
